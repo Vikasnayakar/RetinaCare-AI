@@ -29,7 +29,7 @@ numpy>=2.2.0
 reportlab==4.2.5
 
 # PostgreSQL support
-psycopg[binary]==3.2.5
+psycopg[binary]==3.3.5
 
 # HTTP / utility
 httpx==0.28.1
