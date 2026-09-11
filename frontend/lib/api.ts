@@ -1,4 +1,5 @@
-const API_URL = "http://127.0.0.1:8000";
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
 
 async function request(url: string, options?: RequestInit) {
   const response = await fetch(`${API_URL}${url}`, options);
@@ -66,17 +67,13 @@ export async function createPatient(data: {
   });
 }
 
-export async function getPatients(
-  healthWorkerId: number,
-) {
+export async function getPatients(healthWorkerId: number) {
   return request(
     `/patients?health_worker_id=${healthWorkerId}`,
   );
 }
 
-export async function getPatient(
-  patientId: number,
-) {
+export async function getPatient(patientId: number) {
   return request(`/patients/${patientId}`);
 }
 
@@ -147,9 +144,7 @@ export async function createReferral(
   );
 }
 
-export async function getReferrals(
-  status?: string,
-) {
+export async function getReferrals(status?: string) {
   const query = status
     ? `?status=${encodeURIComponent(status)}`
     : "";
@@ -208,11 +203,15 @@ export async function getDoctorReviews() {
   return request("/doctor-reviews/");
 }
 
+// ============================================================
+// REPORTS
+// ============================================================
+
 export async function downloadScreeningReport(
-  screeningId: number
+  screeningId: number,
 ): Promise<Blob> {
   const response = await fetch(
-    `${API_URL}/reports/screening/${screeningId}`
+    `${API_URL}/reports/screening/${screeningId}`,
   );
 
   if (!response.ok) {
