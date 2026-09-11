@@ -1,0 +1,54 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# Datasets
+datasets/
+
+# Training artifacts
+training/
+
+# Runtime/generated files
+backend/uploads/
+backend/reports/
+backend/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Python model caches
+*.cache
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+# AI training artifacts
+ai-models/grading/efficientnet/baseline_efficientnet_b0.pth
+ai-models/grading/efficientnet/best_efficientnet_b0_v2.pth
+ai-models/grading/efficientnet/test_predictions.csv
+ai-models/grading/efficientnet/training_history.csv
+ai-models/grading/efficientnet/training_history_v2.csv
+ai-models/grading/efficientnet/training_validation_split.csv
+ai-models/grading/efficientnet/training_validation_split_v2.csv
+
+# U-Net training artifacts
+ai-models/segmentation/unet/

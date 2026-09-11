@@ -1,0 +1,569 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================
+   RETINASCREEN GLOBAL THEME SYSTEM
+========================================================= */
+
+:root {
+  --app-bg: #020611;
+  --app-bg-secondary: #050d1b;
+  --app-surface: #071221;
+  --app-surface-elevated: #0b1628;
+
+  --app-text: #e5f3f7;
+  --app-heading: #ffffff;
+  --app-muted: #94a3b8;
+  --app-muted-strong: #cbd5e1;
+
+  --app-border: rgba(148, 163, 184, 0.16);
+  --app-border-strong: rgba(148, 163, 184, 0.25);
+
+  --accent: #22d3ee;
+  --accent-hover: #06b6d4;
+  --accent-soft: rgba(34, 211, 238, 0.1);
+  --accent-soft-strong: rgba(34, 211, 238, 0.18);
+
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #fb7185;
+  --info: #60a5fa;
+
+  --shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================================
+   CYAN
+========================================================= */
+
+html[data-theme="cyan"] {
+  --app-bg: #020611;
+  --app-bg-secondary: #050d1b;
+  --app-surface: #071221;
+  --app-surface-elevated: #0b1628;
+
+  --app-text: #e5f3f7;
+  --app-heading: #ffffff;
+  --app-muted: #94a3b8;
+  --app-muted-strong: #cbd5e1;
+
+  --app-border: rgba(148, 163, 184, 0.16);
+  --app-border-strong: rgba(148, 163, 184, 0.25);
+
+  --accent: #22d3ee;
+  --accent-hover: #06b6d4;
+  --accent-soft: rgba(34, 211, 238, 0.1);
+  --accent-soft-strong: rgba(34, 211, 238, 0.18);
+}
+
+/* =========================================================
+   BLUE
+========================================================= */
+
+html[data-theme="blue"] {
+  --app-bg: #020617;
+  --app-bg-secondary: #07111f;
+  --app-surface: #0a1629;
+  --app-surface-elevated: #0e1d33;
+
+  --app-text: #e7efff;
+  --app-heading: #ffffff;
+  --app-muted: #94a3b8;
+  --app-muted-strong: #cbd5e1;
+
+  --app-border: rgba(148, 163, 184, 0.16);
+  --app-border-strong: rgba(148, 163, 184, 0.25);
+
+  --accent: #60a5fa;
+  --accent-hover: #3b82f6;
+  --accent-soft: rgba(96, 165, 250, 0.1);
+  --accent-soft-strong: rgba(96, 165, 250, 0.18);
+}
+
+/* =========================================================
+   VIOLET
+========================================================= */
+
+html[data-theme="violet"] {
+  --app-bg: #070511;
+  --app-bg-secondary: #0d0a1d;
+  --app-surface: #15102a;
+  --app-surface-elevated: #1b1535;
+
+  --app-text: #f0ebff;
+  --app-heading: #ffffff;
+  --app-muted: #aaa3c2;
+  --app-muted-strong: #d4ccef;
+
+  --app-border: rgba(167, 139, 250, 0.18);
+  --app-border-strong: rgba(167, 139, 250, 0.28);
+
+  --accent: #a78bfa;
+  --accent-hover: #8b5cf6;
+  --accent-soft: rgba(167, 139, 250, 0.1);
+  --accent-soft-strong: rgba(167, 139, 250, 0.18);
+}
+
+/* =========================================================
+   EMERALD
+========================================================= */
+
+html[data-theme="emerald"] {
+  --app-bg: #02100c;
+  --app-bg-secondary: #061a14;
+  --app-surface: #09231b;
+  --app-surface-elevated: #0e2d23;
+
+  --app-text: #e5fff5;
+  --app-heading: #ffffff;
+  --app-muted: #96b7aa;
+  --app-muted-strong: #c7ded6;
+
+  --app-border: rgba(52, 211, 153, 0.16);
+  --app-border-strong: rgba(52, 211, 153, 0.27);
+
+  --accent: #34d399;
+  --accent-hover: #10b981;
+  --accent-soft: rgba(52, 211, 153, 0.1);
+  --accent-soft-strong: rgba(52, 211, 153, 0.18);
+}
+
+/* =========================================================
+   AMBER
+========================================================= */
+
+html[data-theme="amber"] {
+  --app-bg: #100b02;
+  --app-bg-secondary: #1b1205;
+  --app-surface: #261a08;
+  --app-surface-elevated: #30210a;
+
+  --app-text: #fff8e7;
+  --app-heading: #ffffff;
+  --app-muted: #c2b49a;
+  --app-muted-strong: #ded2b8;
+
+  --app-border: rgba(251, 191, 36, 0.17);
+  --app-border-strong: rgba(251, 191, 36, 0.28);
+
+  --accent: #fbbf24;
+  --accent-hover: #f59e0b;
+  --accent-soft: rgba(251, 191, 36, 0.1);
+  --accent-soft-strong: rgba(251, 191, 36, 0.18);
+}
+
+/* =========================================================
+   ROSE
+========================================================= */
+
+html[data-theme="rose"] {
+  --app-bg: #100307;
+  --app-bg-secondary: #1c080e;
+  --app-surface: #291018;
+  --app-surface-elevated: #35141e;
+
+  --app-text: #fff0f3;
+  --app-heading: #ffffff;
+  --app-muted: #c6a6ae;
+  --app-muted-strong: #e1c4cb;
+
+  --app-border: rgba(251, 113, 133, 0.17);
+  --app-border-strong: rgba(251, 113, 133, 0.28);
+
+  --accent: #fb7185;
+  --accent-hover: #f43f5e;
+  --accent-soft: rgba(251, 113, 133, 0.1);
+  --accent-soft-strong: rgba(251, 113, 133, 0.18);
+}
+
+/* =========================================================
+   WHITE / CLINICAL
+========================================================= */
+
+html[data-theme="white"] {
+  --app-bg: #f8fafc;
+  --app-bg-secondary: #eef3f7;
+  --app-surface: #ffffff;
+  --app-surface-elevated: #ffffff;
+
+  --app-text: #334155;
+  --app-heading: #0f172a;
+  --app-muted: #64748b;
+  --app-muted-strong: #475569;
+
+  --app-border: rgba(15, 23, 42, 0.1);
+  --app-border-strong: rgba(15, 23, 42, 0.16);
+
+  --accent: #0891b2;
+  --accent-hover: #0e7490;
+  --accent-soft: rgba(8, 145, 178, 0.08);
+  --accent-soft-strong: rgba(8, 145, 178, 0.15);
+
+  --success: #059669;
+  --warning: #d97706;
+  --danger: #e11d48;
+  --info: #2563eb;
+
+  --shadow-color: rgba(15, 23, 42, 0.08);
+}
+
+/* =========================================================
+   BASE
+========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--app-bg);
+  color: var(--app-text);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+/* =========================================================
+   UNIVERSAL THEME CLASSES
+========================================================= */
+
+.app-page {
+  min-height: 100vh;
+  background: var(--app-bg);
+  color: var(--app-text);
+}
+
+.app-surface {
+  background: var(--app-surface);
+  color: var(--app-text);
+  border-color: var(--app-border);
+}
+
+.app-surface-elevated {
+  background: var(--app-surface-elevated);
+  color: var(--app-text);
+  border-color: var(--app-border);
+}
+
+.app-heading {
+  color: var(--app-heading);
+}
+
+.app-text {
+  color: var(--app-text);
+}
+
+.app-muted {
+  color: var(--app-muted);
+}
+
+.app-border {
+  border-color: var(--app-border);
+}
+
+.app-accent {
+  color: var(--accent);
+}
+
+.app-accent-bg {
+  background: var(--accent);
+  color: white;
+}
+
+.app-accent-soft {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.app-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--accent);
+  border-radius: 0.75rem;
+
+  background: var(--accent);
+  color: #ffffff;
+
+  font-weight: 600;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    filter 0.2s ease;
+}
+
+.app-button:hover {
+  transform: translateY(-1px);
+  background: var(--accent-hover);
+}
+
+.app-outline-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--accent);
+  border-radius: 0.75rem;
+
+  background: var(--accent-soft);
+  color: var(--accent);
+
+  font-weight: 600;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.app-outline-button:hover {
+  transform: translateY(-1px);
+  background: var(--accent-soft-strong);
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.top-nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 42px;
+  padding: 0.65rem 1rem;
+
+  border: 1px solid var(--app-border);
+  border-radius: 0.75rem;
+
+  background: var(--app-surface);
+  color: var(--app-text);
+
+  font-size: 0.875rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.top-nav-button:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* =========================================================
+   CARDS
+========================================================= */
+
+.app-card {
+  background: var(--app-surface);
+  color: var(--app-text);
+
+  border: 1px solid var(--app-border);
+  border-radius: 1rem;
+
+  box-shadow: 0 10px 35px var(--shadow-color);
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.app-card:hover {
+  border-color: var(--app-border-strong);
+}
+
+/* =========================================================
+   FORM ELEMENTS
+========================================================= */
+
+input,
+textarea,
+select {
+  background: var(--app-surface);
+  color: var(--app-text);
+
+  border-color: var(--app-border);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--app-muted);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+
+  border-color: var(--accent);
+
+  box-shadow:
+    0 0 0 3px var(--accent-soft);
+}
+
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.section-pill {
+  display: inline-flex;
+  align-items: center;
+
+  border: 1px solid var(--accent);
+  border-radius: 9999px;
+
+  background: var(--accent-soft);
+  color: var(--accent);
+
+  padding: 0.4rem 0.75rem;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+
+  border-radius: 0.65rem;
+
+  padding: 0.45rem 0.7rem;
+
+  color: var(--app-text);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-link:hover {
+  transform: translateY(-1px);
+
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* =========================================================
+   WHITE THEME - FORCE LEGACY DARK SURFACES LIGHT
+========================================================= */
+
+html[data-theme="white"] .bg-slate-950,
+html[data-theme="white"] .bg-slate-900,
+html[data-theme="white"] .bg-gray-950,
+html[data-theme="white"] .bg-gray-900,
+html[data-theme="white"] .bg-black {
+  background-color: var(--app-surface) !important;
+}
+
+html[data-theme="white"] .text-white {
+  color: var(--app-heading) !important;
+}
+
+html[data-theme="white"] .text-slate-100,
+html[data-theme="white"] .text-slate-200 {
+  color: var(--app-heading) !important;
+}
+
+html[data-theme="white"] .text-slate-300,
+html[data-theme="white"] .text-slate-400,
+html[data-theme="white"] .text-slate-500 {
+  color: var(--app-muted) !important;
+}
+
+html[data-theme="white"] .border-slate-800,
+html[data-theme="white"] .border-slate-700,
+html[data-theme="white"] .border-slate-600 {
+  border-color: var(--app-border) !important;
+}
+
+/* =========================================================
+   WHITE THEME - LEGACY COLORED BACKGROUNDS
+========================================================= */
+
+html[data-theme="white"] .bg-cyan-950,
+html[data-theme="white"] .bg-violet-950,
+html[data-theme="white"] .bg-emerald-950,
+html[data-theme="white"] .bg-blue-950,
+html[data-theme="white"] .bg-indigo-950,
+html[data-theme="white"] .bg-purple-950 {
+  background-color: var(--app-surface) !important;
+}
+
+/* =========================================================
+   WHITE THEME - LEGACY DARK GRADIENTS
+========================================================= */
+
+html[data-theme="white"] .from-slate-400 {
+  --tw-gradient-from: var(--app-surface) !important;
+}
+
+html[data-theme="white"] .via-slate-700 {
+  --tw-gradient-via: var(--app-surface-elevated) !important;
+}
+
+html[data-theme="white"] .to-slate-950 {
+  --tw-gradient-to: var(--app-bg-secondary) !important;
+}
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--app-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--app-border-strong);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* =========================================================
+   SELECTION
+========================================================= */
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
